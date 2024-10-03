@@ -1,0 +1,285 @@
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.hero__text {
+    max-width: 50%;
+}
+
+.hero__title {
+    font-size: 50px;
+    color: #0B132A;
+}
+
+.hero__highlight {
+    color: #F53855;
+}
+
+.hero__description {
+    font-size: 18px;
+    color: #4F5665;
+    margin-top: 20px;
+}
+
+.hero__button {
+    background-color: #F53855;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+.hero__button:hover {
+    background-color: #D12C43;
+}
+
+.hero__image img {
+    width: 100%;
+    height: auto;
+    
+}
+
+
+.features {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    gap: 30px;
+}
+
+.features__image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; 
+}
+
+.features__image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.features__content {
+    flex: 1;
+    text-align: left;
+}
+
+.features__title {
+    font-weight: 600;
+    font-size: 35px;
+    color: #0B132A;
+    margin-bottom: 20px;
+}
+
+.features__description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #4F5665;
+    margin-bottom: 30px;
+}
+
+.features__list {
+    list-style: none;
+    
+}
+
+.features__list-item {
+    font-size: 16px;
+    color: #0B132A;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.features__list-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+.testimonials {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.testimonials__header {
+    text-align: center;
+}
+
+.testimonials__title {
+    font-weight: 500;
+    font-size: 35px;
+    color: #0B132A;
+}
+
+.testimonials__description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #4F5665;
+    margin-top: 20px;
+}
+
+.testimonials__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.testimonials__card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    width: 30%;
+    position: relative;
+}
+
+.testimonials__card:hover {
+    transform: translateY(-5px);
+    border: 2px solid red; 
+    animation: blink 1s infinite; 
+}
+
+.testimonials__avatar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.testimonials__avatar-img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.testimonials__user-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.testimonials__user-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0B132A;
+}
+
+.testimonials__location {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.testimonials__rating {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.testimonials__rating-number {
+    font-size: 16px;
+    color: #0B132A;
+    margin-right: 5px;
+}
+
+.testimonials__rating-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.testimonials__text {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+
+.subscribe-section {
+    display: grid;
+    justify-content: center;
+    background-color: #FFFFFF;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: -50px;
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 20px; 
+}
+.subscribe-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.subscribe-text {
+    padding-left: 40px;
+}
+
+.subscribe-text h2 {
+    font-size: 30px;
+    color: #0B132A;
+    margin-bottom: 10px;
+}
+
+.subscribe-text p {
+    font-size: 16px;
+    color: #4F5665;
+}
+
+.subscribe-button {
+    text-align: right;
+    padding-right: 40px;
+}
+
+.subscribe-button button {
+    background-color: #F53855;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe-button button:hover {
+    background-color: #D12C43;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}

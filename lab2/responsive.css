@@ -1,0 +1,410 @@
+
+
+/* Для екранів до 767px */
+@media screen and (max-width: 767px) {
+
+    .header__auth-buttons {
+        display: none;
+       
+}
+  
+#menuToggle {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle a {
+    color: #4F5665;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#menuToggle a:hover {
+    color: #F53855;
+}
+
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0; 
+    z-index: 2; 
+    -webkit-touch-callout: none;
+}
+
+
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+                background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+                opacity 0.55s ease;
+}
+
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+
+#menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+
+#menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+
+#menuToggle input:checked ~ ul {
+    transform: none;
+}
+    
+
+    .header__line {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__nav {
+        display: none; 
+    }
+
+    
+
+    /* Інші стилі */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero__text {
+        max-width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .hero__title {
+        font-size: 28px;
+    }
+
+    .hero__description {
+        font-size: 14px;
+    }
+
+    .hero__button {
+        padding: 8px 20px;
+        margin-top: 20px;
+    }
+
+    .hero__image img {
+        width: 90%;
+    }
+
+    .features {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .features__content {
+        flex: 1;
+        text-align: center;
+    }
+
+    .features__image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .features__image img {
+        width: 80%;
+    }
+
+    .testimonials__container {
+        flex-direction: column;
+    }
+
+    .features__list {
+        list-style: none;
+        text-align: center;
+    }
+
+    .testimonials__card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .testimonials__rating-number {
+        font-size: 16px;
+        color: #0B132A;
+        margin-right: 5px;
+        margin-top: 20px;
+    }
+
+    .testimonials__user-name {
+        font-size: 16px;
+        font-weight: 700;
+        color: #0B132A;
+    }
+
+    .testimonials__rating-icon {
+        width: 16px;
+        height: 16px;
+        margin-top: 5px;
+    }
+
+    .subscribe-section {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .subscribe-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .subscribe-text {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .subscribe-button {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .subscribe-button button {
+        width: 100%; 
+        padding: 15px;
+    }
+
+    .subscribe-text h2 {
+        font-size: 24px;
+    }
+
+    .subscribe-text p {
+        font-size: 14px;
+    }
+
+    .footer__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+}
+
+/* Для екранів від 768px до 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #menuToggle {
+        display: none; 
+    }
+
+
+    .header__line {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__nav {
+        display: flex;
+        gap: 12px;
+    }
+
+    .header__auth-buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+    .hero__title {
+        font-size: 36px;
+    }
+
+    .hero__description {
+        font-size: 16px;
+    }
+
+    .hero__button {
+        padding: 10px 25px;
+    }
+
+    .hero__image img {
+        width: 80%;
+    }
+
+    .features__image img {
+        width: 60%;
+    }
+
+    .features__list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .testimonials__card {
+        width: 95%;
+        justify-content: space-between;
+    }
+
+    .testimonials__container {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .testimonials__user-name {
+        font-size: 16px;
+        font-weight: 700;
+        color: #0B132A;
+    }
+
+    .testimonials__rating-number {
+        font-size: 16px;
+        color: #0B132A;
+        margin-right: 5px;
+        margin-top: 20px;
+    }
+
+    .testimonials__rating-icon {
+        width: 16px;
+        height: 16px;
+        margin-top: 5px;
+    }
+
+    .subscribe-section {
+        margin-left: 100px;
+        margin-right: 100px;
+        padding: 20px 30px; /* Збільшуємо відступи для планшетів */
+    }
+}
+
+/* Для екранів від 1024px */
+@media screen and (min-width: 1024px) {
+    #menuToggle {
+        display: none;
+    }
+
+    .header__line {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__nav {
+        display: flex;
+        gap: 60px;
+        justify-content: space-between;
+    }
+
+    .header__auth-buttons {
+        display: flex;
+        gap: 10px;
+        margin-left: 40px;
+    }
+
+    .hero__title {
+        font-size: 50px;
+    }
+
+    .features__content {
+        justify-content: space-between;
+        margin-left: 20%;
+    }
+
+    .features__list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .hero__description {
+        font-size: 18px;
+    }
+
+    .testimonials__card {
+        width: 30%;
+    }
+
+    .testimonials__rating-number {
+        font-size: 16px;
+        color: #0B132A;
+        margin-right: 5px;
+        margin-top: 20px;
+    }
+
+    .testimonials__rating-icon {
+        width: 16px;
+        height: 16px;
+        margin-top: 5px;
+    }
+
+    .subscribe-section {
+        margin-left: 100px;
+        margin-right: 100px;
+        padding: 30px 60px; /* Збільшуємо відступи для великих екранів */
+    }
+
+    .footer__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 40px;
+       
+    }
+    .footer__social {
+        display: flex;
+        gap: 20px;
+        
+    }
+}

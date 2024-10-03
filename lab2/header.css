@@ -1,0 +1,74 @@
+/* Загальні стилі */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Стилі для хедера */
+.header__line {
+    display: flex;
+    justify-content: space-between; /* Додаємо відступ між елементами */
+    align-items: center;
+    padding: 10px 20px; /* Відступи для вирівнювання */
+   
+}
+
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-img {
+    margin-right: 10px;
+}
+
+.header__site-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0B132A;
+}
+
+
+.header__nav-item{
+    text-decoration: none;
+    color: #4F5665;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s linear;
+}
+
+
+.header__sign-in a {
+    color: #4F5665;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: color 0.3s linear;
+}
+
+.header__sign-in a:hover {
+    color: #F53855;
+}
+
+.header__sign-up a {
+    border: 1px solid #F53855;
+    background-color: #FFFFFF;
+    color: #F53855;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s linear;
+}
+
+.header__sign-up a:hover {
+    background-color: #F53855;
+    color: #FFFFFF;
+}
+

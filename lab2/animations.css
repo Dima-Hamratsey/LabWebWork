@@ -1,0 +1,172 @@
+
+.testimonials__card {
+    transition: transform 0.3s ease;
+}
+
+.testimonials__card:hover {
+    transform: translateY(-5px);
+}
+
+
+.hero__button {
+    transition: background-color 0.3s ease;
+}
+
+.hero__button:hover {
+    background-color: #D12C43;
+}
+
+
+.testimonial-card:hover {
+    animation: blink-border 1s infinite; 
+}
+
+
+.testimonials__card:hover {
+    animation: blink-border 1s infinite; 
+}
+
+
+.testimonials__card:hover {
+    animation: blink-border 1s infinite; 
+}
+
+
+@keyframes blink-border {
+    0%, 100% {
+        border-color: red;
+    }
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+ 
+  .header__logo {
+    animation: slideInLeft 1s ease-out;
+  }
+  
+  .header__nav-item {
+    animation: fadeIn 1s ease-in-out 0.5s forwards;
+    opacity: 0;
+  }
+  
+  .header__auth-buttons .header__sign-in-link,
+  .header__auth-buttons .header__sign-up-link {
+    animation: zoomIn 1s ease-out 1s forwards;
+    opacity: 0;
+  }
+  
+ 
+  .hero__title {
+    animation: slideInLeft 1.5s ease-out;
+  }
+  
+  .hero__description {
+    animation: fadeIn 1s ease-in-out 2s forwards;
+    opacity: 0;
+  }
+  
+  .hero__button {
+    animation: zoomIn 1.5s ease-out 2.5s forwards;
+    opacity: 0;
+  }
+  
+  .hero__image-img {
+    animation: slideInRight 2s ease-out;
+  }
+  
+  
+  .features__title {
+    animation: slideInLeft 1.5s ease-out;
+  }
+  
+  .features__description {
+    animation: fadeIn 1.5s ease-in-out 1s forwards;
+    opacity: 0;
+  }
+  
+  .features__list-item {
+    animation: fadeIn 1.5s ease-in-out 2s forwards;
+    opacity: 0;
+  }
+  
+
+  .testimonials__title {
+    animation: slideInLeft 1.5s ease-out;
+  }
+  
+  .testimonials__description {
+    animation: fadeIn 1.5s ease-in-out 1s forwards;
+    opacity: 0;
+  }
+  
+
+  
+ 
+  .subscribe-content {
+    animation: slideInRight 1.5s ease-out 2s forwards;
+    opacity: 0;
+  }
+  
+  .subscribe-button button {
+    animation: zoomIn 2s ease-out 2.5s forwards;
+    opacity: 0;
+  }
+  
+  
+  .footer__left {
+    animation: slideInLeft 1.5s ease-out;
+  }
+  
+  .footer__social-icon {
+    animation: fadeIn 1.5s ease-out 0.7s forwards;
+    opacity: 0;
+  }
+  
+  .footer__right {
+    animation: slideInRight 1.5s ease-out;
+  }
+  
