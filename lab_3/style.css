@@ -1,0 +1,214 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #181818;
+    color: white;
+}
+
+.header {
+    background-color: #000;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo img {
+    height: 40px;
+    margin-right: 15px;
+}
+
+.header .nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.header .nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.header .nav a:hover {
+    color: #F5C518;
+}
+
+.hero {
+    background: #000 url('assets/hero.jpg') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 4em;
+    color: #F5C518;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-subtitle {
+    font-size: 1.5em;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.hero-button {
+    background-color: #D81B60;
+    color: white;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #C2185B;
+}
+
+.section-title {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 40px 0;
+}
+#total-speed-container {
+    display: flex;
+    justify-content: center; 
+    margin: 20px 0; 
+}
+
+#total-speed-container h3 {
+    font-size: 1.5em;
+    color: #f8f8f8; 
+}
+
+
+.controls {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.controls button {
+    padding: 12px 25px;
+    background-color: #F5C518;
+    border: none;
+    color: #181818;
+    font-size: 1.1em;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+    background-color: #d6b30f;
+}
+
+#search-input {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    font-size: 1em;
+}
+
+#car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.car-card {
+    background-color: #292929;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+}
+
+.car-card img {
+    width: 100%;
+    height: auto; 
+    object-fit: cover; 
+}
+
+.car-info {
+    padding: 20px;
+    font-size: 1.1em;
+    text-align: center;
+}
+.car-card .max-speed {
+    display: none;
+    transition: display 0.3s ease;
+}
+
+.car-card:hover .max-speed {
+    display: block;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer .social-icons img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+}
+
+
+#back-to-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5em;
+    display: none;
+    z-index: 1000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#back-to-top-btn:hover {
+    background-color: #555;
+}
