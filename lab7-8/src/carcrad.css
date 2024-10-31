@@ -1,0 +1,32 @@
+.car-card {
+    background-color: #292929;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+}
+
+.car-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.car-info {
+    padding: 20px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.car-card .max-speed {
+    display: none;
+    transition: display 0.3s ease;
+}
+
+.car-card:hover .max-speed {
+    display: block;
+}

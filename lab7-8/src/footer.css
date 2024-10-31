@@ -1,0 +1,16 @@
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+}
