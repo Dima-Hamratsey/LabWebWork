@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Car</title>
+    <link rel="stylesheet" href="create.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="assets/logo.png" alt="Elite Cars Logo">
+            <span>Elite Cars</span>
+        </div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="create.html">Create</a>
+            <a href="edit.html">Edit</a>
+        </nav>
+    </header>
+
+    <main id="create-page" class="fade-in"> <!-- Додаємо анімацію для сторінки -->
+        <h1 class="section-title">Add New Car</h1>
+        <form id="create-car-form">
+            <label for="brand">Brand:</label>
+            <input type="text" id="brand" name="brand" required>
+
+            <label for="model">Model:</label>
+            <input type="text" id="model" name="model" required>
+
+            <label for="power">Power (hp):</label>
+            <input type="number" id="power" name="power" min="50" max="1500" required>
+
+            <label for="maxSpeed">Max Speed (km/h):</label>
+            <input type="number" id="maxSpeed" name="maxSpeed" min="100" max="400" required>
+
+            <label for="image">Upload Image:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+
+            <button type="submit">Add Car</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2024 Elite Cars. All rights reserved.</p>
+    </footer>
+
+    <script src="create.js"></script>
+</body>
+</html>
