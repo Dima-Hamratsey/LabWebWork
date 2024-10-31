@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Car</title>
+    <link rel="stylesheet" href="edit.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="assets/logo.png" alt="Elite Cars Logo">
+            <span>Elite Cars</span>
+        </div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="create.html">Create</a>
+            <a href="edit.html">Edit</a>
+        </nav>
+    </header>
+
+    <main id="edit-page" class="fade-in"> <!-- Додаємо анімацію для сторінки -->
+        <h1 class="section-title">Edit your Dream Car</h1>
+        <form id="edit-car-form">
+            <label for="car-select">Select Car:</label>
+            <select id="car-select"></select>
+
+            <label for="brand">Brand:</label>
+            <input type="text" id="brand" name="brand" required>
+
+            <label for="model">Model:</label>
+            <input type="text" id="model" name="model" required>
+
+            <label for="power">Power (hp):</label>
+            <input type="number" id="power" name="power" min="50" max="1500" required>
+
+            <label for="maxSpeed">Max Speed (km/h):</label>
+            <input type="number" id="maxSpeed" name="maxSpeed" min="100" max="400" required>
+
+            <button type="submit">Update Car</button>
+            <button type="button" id="delete-btn" style="background-color: red;">Delete Car</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2024 Elite Cars. All rights reserved.</p>
+    </footer>
+
+    <script src="edit.js"></script>
+</body>
+</html>
